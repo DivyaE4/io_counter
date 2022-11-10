@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  name = 'Counter App';
+  number=0;
+
+  increase(){
+    this.number=this.number + 1;
+  }
+
+  decrease(){
+    this.number=this.number -1;
+  }
 }
